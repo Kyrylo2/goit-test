@@ -7,22 +7,23 @@ para familiarizarse con las funciones opcionales y configurarlas.
 
 ## Crear un repositorio desde una plantilla
 
-Usa este repositorio de la organización GoIT como plantilla para crear el repositorio de tu proyecto. 
-Para hacer esto, haz clic en `«Use this template»` y selecciona la opción
-`«Create a new repository»`, tal como se muestra en la imagen.
+Usa este repositorio de la organización GoIT como plantilla para crear el
+repositorio de tu proyecto. Para hacer esto, haz clic en `«Use this template»` y
+selecciona la opción `«Create a new repository»`, tal como se muestra en la
+imagen.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+![Creating repo from a template step 1](./src/assets/template-step-1.png)
 
-Para el siguiente paso deberás abrir la página para crear un nuevo repositorio. 
+Para el siguiente paso deberás abrir la página para crear un nuevo repositorio.
 Ponle nombre, asegúrate de que el repositorio sea público y haz clic en el botón
 `«Create repository from template»`.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+![Creating repo from a template step 2](./src/assets/template-step-2.png)
 
-Ahora ya tienes un repositorio de proyecto personal, junto a una estructura de 
-archivos y carpetas del repositorio de plantillas. Luego trabaja con esto, así 
-como con cualquier otro repositorio personal, realiza una copia en tu computadora 
-y súbelo a GitHub.
+Ahora ya tienes un repositorio de proyecto personal, junto a una estructura de
+archivos y carpetas del repositorio de plantillas. Luego trabaja con esto, así
+como con cualquier otro repositorio personal, realiza una copia en tu
+computadora y súbelo a GitHub.
 
 ## Prepararse para el trabajo
 
@@ -51,7 +52,7 @@ A continuación, ve a la configuración del repositorio de GitHub (`Settings` >
 `Pages`) y selecciona distribuir la versión de producción de los archivos desde
 la carpeta `/root` de la rama `gh-pages`, si no se ha hecho automáticamente.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+![GitHub Pages settings](./src/assets/repo-settings.png)
 
 ### Estado de la implantación
 
@@ -65,7 +66,7 @@ El estado del último commit se indica con un icono junto al ID del commit.
 Se puede ver información de estado más detallada haciendo clic en el icono y en
 la ventana desplegable del enlace `Detalles`.
 
-![Deployment status](./assets/deploy-status.png)
+![Deployment status](./src/assets/deploy-status.png)
 
 ### Página activa
 
@@ -94,7 +95,7 @@ principio y al final de la cadena son obligatorias.
 
 ## ¿Cómo funciona?
 
-![How it works](./assets/how-it-works.png)
+![How it works](./src/assets/how-it-works.png)
 
 1. Después de cada push a la rama `main` del repositorio GitHub, se ejecuta un
    script especial (GitHub Action) del archivo `.github/workflows/deploy.yml`.

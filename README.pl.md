@@ -14,21 +14,24 @@ repozytorium własnego projektu. W tym celu kliknij na przycisk
 `"Use this template"` i wybierz opcję `"Create a new repository"`, jak pokazano
 na rysunku.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+![Creating repo from a template step 1](./src/assets/template-step-1.png)
 
 W następnym kroku otworzy się strona utworzenia nowego repozytorium. Wypełnij
 pole nazwy i upewnij się, że repozytorium jest publiczne, a następnie kliknij na
 przycisk `"Create repository from template"`.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+![Creating repo from a template step 2](./src/assets/template-step-2.png)
 
-Po utworzeniu repozytorium, należy przejść do jego ustawień w zakładce `Settings` > `Actions` > `General`, jak pokazano na rysunku.
+Po utworzeniu repozytorium, należy przejść do jego ustawień w zakładce
+`Settings` > `Actions` > `General`, jak pokazano na rysunku.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+![Settings GitHub Actions permissions step 1](./src/assets/gh-actions-perm-1.png)
 
-Przescrolluj stronę do samego końca, w sekcji `«Workflow permissions»` wybierz opcję `«Read and write permissions»` i zaznacz pole w checkboksie. Jest to niezbędne do automatyzacji procesu deploymentu projektu.
+Przescrolluj stronę do samego końca, w sekcji `«Workflow permissions»` wybierz
+opcję `«Read and write permissions»` i zaznacz pole w checkboksie. Jest to
+niezbędne do automatyzacji procesu deploymentu projektu.
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+![Settings GitHub Actions permissions step 2](./src/assets/gh-actions-perm-2.png)
 
 Teraz masz własne repozytorium projektu, ze strukturą folderów i plików jak w
 szablonie. Pracuj z nim jak z innymi repozytoriami, klonuj je na swój komputer,
@@ -61,7 +64,7 @@ Następnie należy przejść do ustawień repozytorium GitHub (`Settings` > `Pag
 i wydystrybuować wersję produkcyjną plików z folderu `/root` gałęzi `gh-pages`,
 jeśli nie zostało to wykonane automatycznie.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+![GitHub Pages settings](./src/assets/repo-settings.png)
 
 ### Status deploymentu
 
@@ -76,7 +79,7 @@ identyfikatora.
 Bardziej szczegółowe informacje o statusie można zobaczyć po kliknięciu na
 ikonkę i przejściu w wyskakującym oknie do odnośnika `Details`.
 
-![Deployment status](./assets/deploy-status.png)
+![Deployment status](./src/assets/deploy-status.png)
 
 ### Deployowana strona
 
@@ -106,7 +109,7 @@ końcu łańcucha jest obowiązkowy.
 
 ## Jak to działa
 
-![How it works](./assets/how-it-works.png)
+![How it works](./src/assets/how-it-works.png)
 
 1. Po każdym pushu do gałęzi `main` repozytorium GitHub, uruchamia się specjalny
    skrypt (GitHub Action) z pliku `.github/workflows/deploy.yml`.
