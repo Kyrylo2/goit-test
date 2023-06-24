@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyledButton } from './Button.styled';
-import SaveIcon from '@mui/icons-material/Save';
 
 const ButtonStyled = ({
   selected = false,
@@ -26,8 +25,7 @@ const ButtonStyled = ({
       loadingPosition="start"
       variant="solid"
       disabled={loading}
-      following={following} // Передаємо рядок замість логічного значення
-      // sx={buttonStyle}
+      following={following}
       onClick={handleClick}
       {...otherProps}
     >

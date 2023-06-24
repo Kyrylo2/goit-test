@@ -1,6 +1,5 @@
 import Button from '@mui/joy/Button';
 import styled from 'styled-components';
-import { purple } from '@mui/material/colors';
 
 export const StyledButton = styled(Button)`
   && {

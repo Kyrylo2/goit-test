@@ -21,12 +21,11 @@ export const BackgroundLayer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
 `;
 
 export const Container = styled.div`
   display: flex;
-  /* padding: 10px; */
+
   align-items: center;
   height: 100%;
   min-height: 100vh;
@@ -106,7 +105,7 @@ export const HeaderContainer = styled.header`
 export const MainContainer = styled.main`
   display: flex;
   flex: 1;
-  /* padding: 10px; */
+
   align-items: center;
   width: 100%;
   max-width: 1200px;
@@ -142,7 +141,7 @@ export const Link = styled(NavLink)`
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
-  /* font-size: 1em; */
+
   color: ${purple[50]};
   font-weight: 400;
   border: 1px solid ${purple[200]};

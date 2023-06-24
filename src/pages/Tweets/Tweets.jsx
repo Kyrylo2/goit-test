@@ -1,14 +1,11 @@
-import { LoadMoreButton } from 'components/LoadMoreButton/LoadMoreButton';
 import { TweetsList } from 'components/TweetsList/TweetsList';
 
 import React, { useState, useEffect } from 'react';
 import { USERS_PER_PAGE } from 'services/constants';
 import { useNavigate } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
-import { getUsers } from 'services/api';
 
 import Spinner from 'components/Spinner/Spinner';
-import { toast } from 'react-toastify';
+
 import { useTweets } from 'hooks/useTweets';
 
 import InputLabel from '@mui/material/InputLabel';
@@ -16,14 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import { purple } from '@mui/material/colors';
 import Select from '@mui/material/Select';
-// import {
-//   Breadcrumbs,
-//   Button,
-//   FormControlLabel,
-//   FormLabel,
-//   Radio,
-//   RadioGroup,
-// } from '@mui/material';
+
 import Button from '@mui/joy/Button';
 import { BreadcrumbsAndRadioButtonFilterContainer } from './Tweets.styled';
 
@@ -193,9 +183,6 @@ const Tweets = () => {
       >
         Load more
       </Button>
-      {/* <LoadMoreButton type="button" onClick={onLoadMoreButton}>
-        Load more
-      </LoadMoreButton> */}
     </>
   );
 };
