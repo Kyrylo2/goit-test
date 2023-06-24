@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_test=self.webpackChunkgoit_test||[]).push([[877],{6877:function(n,e,t){t.r(e),t.d(e,{default:function(){return c}});t(2791);var i,r,u=t(168),f=t(8789),s=f.default.div(i||(i=(0,u.Z)(["\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n"]))),l=f.default.h1(r||(r=(0,u.Z)(["\n  font-weight: bold;\n  font-size: 3rem;\n"]))),o=t(3329),c=function(){return(0,o.jsx)(s,{children:(0,o.jsx)(l,{children:"Error 404: Page Not Found"})})}}}]);
+//# sourceMappingURL=877.a6fbf229.chunk.js.map
