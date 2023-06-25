@@ -112,22 +112,14 @@ export const MainContainer = styled.main`
   margin: 0 auto;
   min-width: 320px;
 
-  /* @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  } */
   display: flex;
 
   justify-content: space-between;
   flex-direction: column;
   gap: 30px;
   flex-wrap: wrap;
+
+  padding: 20px 0 20px 0;
 `;
 
 export const Logo = styled(NavLink)`

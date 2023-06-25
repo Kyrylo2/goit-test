@@ -6,7 +6,7 @@ import { useTweets } from 'hooks/useTweets';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import { purple } from '@mui/material/colors';
+import { grey, purple } from '@mui/material/colors';
 import Select from '@mui/material/Select';
 import Button from '@mui/joy/Button';
 import { BreadcrumbsAndRadioButtonFilterContainer } from './Tweets.styled';
@@ -188,6 +188,11 @@ const Tweets = () => {
             borderWidth: '1px',
             backgroundColor: purple[600],
             color: purple[50],
+          },
+          '&:disabled': {
+            borderColor: grey[500],
+            borderWidth: '1px',
+            color: grey[400],
           },
         }}
       >
