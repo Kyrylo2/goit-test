@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/goit-test/static/css/main.1b018038.css",
-    "main.js": "/goit-test/static/js/main.fb6322e9.js",
-    "static/js/921.60e68635.chunk.js": "/goit-test/static/js/921.60e68635.chunk.js",
+    "main.js": "/goit-test/static/js/main.c5518340.js",
+    "static/js/921.b36e4632.chunk.js": "/goit-test/static/js/921.b36e4632.chunk.js",
     "static/js/934.e1b7d0f2.chunk.js": "/goit-test/static/js/934.e1b7d0f2.chunk.js",
     "static/js/877.a6fbf229.chunk.js": "/goit-test/static/js/877.a6fbf229.chunk.js",
     "static/js/500.5ea9bdc3.chunk.js": "/goit-test/static/js/500.5ea9bdc3.chunk.js",
     "static/js/552.5ccf2a3b.chunk.js": "/goit-test/static/js/552.5ccf2a3b.chunk.js",
+    "static/media/Following.png": "/goit-test/static/media/Following.7627a8b223cae08273a6.png",
     "static/media/Follow.png": "/goit-test/static/media/Follow.3055c7dae040431ddb6c.png",
     "static/media/sad-cat-carnimee-transparent.png": "/goit-test/static/media/sad-cat-carnimee-transparent.312e27d8dd3b62695d08.png",
     "static/media/mainPicture.png": "/goit-test/static/media/mainPicture.010ab3c33bc13f300d33.png",
     "index.html": "/goit-test/index.html",
     "main.1b018038.css.map": "/goit-test/static/css/main.1b018038.css.map",
-    "main.fb6322e9.js.map": "/goit-test/static/js/main.fb6322e9.js.map",
-    "921.60e68635.chunk.js.map": "/goit-test/static/js/921.60e68635.chunk.js.map",
+    "main.c5518340.js.map": "/goit-test/static/js/main.c5518340.js.map",
+    "921.b36e4632.chunk.js.map": "/goit-test/static/js/921.b36e4632.chunk.js.map",
     "934.e1b7d0f2.chunk.js.map": "/goit-test/static/js/934.e1b7d0f2.chunk.js.map",
     "877.a6fbf229.chunk.js.map": "/goit-test/static/js/877.a6fbf229.chunk.js.map",
     "500.5ea9bdc3.chunk.js.map": "/goit-test/static/js/500.5ea9bdc3.chunk.js.map",
@@ -21,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.1b018038.css",
-    "static/js/main.fb6322e9.js"
+    "static/js/main.c5518340.js"
   ]
 }
