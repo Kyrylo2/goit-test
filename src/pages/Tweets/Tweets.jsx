@@ -153,9 +153,9 @@ const Tweets = () => {
             }}
             autoWidth
           >
-            <MenuItem value={'all'}>All</MenuItem>
-            <MenuItem value={'followed'}>Followed</MenuItem>
-            <MenuItem value={'not followed'}>Not followed</MenuItem>
+            <MenuItem value={'all'}>Show All</MenuItem>
+            <MenuItem value={'followed'}>Following</MenuItem>
+            <MenuItem value={'not followed'}>Follow</MenuItem>
           </Select>
         </FormControl>
       </BreadcrumbsAndRadioButtonFilterContainer>
