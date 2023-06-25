@@ -21,7 +21,11 @@ const Home = () => {
             alt="logo"
           />
           <HomeImage
-            src={require('../../assets/images/HomeImages/Follow.png')}
+            src={require('../../assets/images/HomeImages/Following.png')}
+            alt="logo"
+          />
+          <HomeImage
+            src={require('../../assets/images/HomeImages/Following.png')}
             alt="logo"
           />
           <HomeImage
@@ -33,11 +37,7 @@ const Home = () => {
             alt="logo"
           />
           <HomeImage
-            src={require('../../assets/images/HomeImages/Follow.png')}
-            alt="logo"
-          />
-          <HomeImage
-            src={require('../../assets/images/HomeImages/Follow.png')}
+            src={require('../../assets/images/HomeImages/Following.png')}
             alt="logo"
           />
           <HomeImage
