@@ -1,35 +1,75 @@
+import React, { useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { getFollowingUsers } from 'redux/selectors';
 import { ImageCatStyles, TweetsListStyled } from './TweetsList.styled';
 import TweetsListItem from 'components/TweetsListItem/TweetsListItem';
 
-export const TweetsList = ({ users, filterSelector }) => {
-  console.log('visibleUsers:', users);
-  console.log('filteredSelector:', filterSelector); // data: 'all', 'followed', 'not followed'
+export const TweetsList = ({
+  allUsers,
+  visibleUsersProps,
+  filterSelector,
+  handleLoadMoreButtonDisabled,
+}) => {
+  const [visibleUsers, setVisibleUsers] = useState(visibleUsersProps);
 
   const followedUsers = useSelector(getFollowingUsers);
-  console.log('followedUsers:', followedUsers);
 
-  const isFollowing = user => {
-    const res = followedUsers?.some(item => item.id === user.id);
-    console.log('isFollowing:', res);
-    return res;
+  // Compare all users with followed users
+  const compareUsers = (allUsers, followUsers) => {
+    const followSet = new Set(followUsers.map(user => user.id));
+    const followed = [];
+    const notFollowed = [];
+
+    for (const user of allUsers) {
+      if (followSet.has(user.id)) {
+        followed.push(user);
+      } else {
+        notFollowed.push(user);
+      }
+    }
+
+    return {
+      followed,
+      notFollowed,
+    };
   };
 
-  const filteredUsers = users.filter(user => {
-    if (filterSelector === 'all') {
-      return true; // Показувати всіх користувачів
-    } else if (filterSelector === 'followed') {
-      return isFollowing(user); // Показувати тільки відслідковувані користувачі
-    } else if (filterSelector === 'not followed') {
-      return !isFollowing(user); // Показувати тільки не відслідковувані користувачі
-    }
-    return false;
-  });
+  // Check if a user is being followed
+  const isFollowing = useCallback(
+    user => {
+      return followedUsers?.some(item => item.id === user.id);
+    },
+    [followedUsers]
+  );
 
-  return filteredUsers?.length > 0 ? (
+  // Filter visible users based on the selected filter
+  useEffect(() => {
+    const filteredUsers = visibleUsersProps.filter(user => {
+      switch (filterSelector) {
+        case 'all':
+          return true; // Show all users
+        case 'followed':
+          return isFollowing(user); // Show only followed users
+        case 'not followed':
+          return !isFollowing(user); // Show only not followed users
+        default:
+          return false;
+      }
+    });
+
+    setVisibleUsers(filteredUsers);
+  }, [filterSelector, isFollowing, visibleUsersProps]);
+
+  // Update the load more button disabled state based on all users and followed users
+  useEffect(() => {
+    if (visibleUsers) {
+      handleLoadMoreButtonDisabled(compareUsers(allUsers, followedUsers));
+    }
+  }, [allUsers, followedUsers, handleLoadMoreButtonDisabled, visibleUsers]);
+
+  return visibleUsers?.length > 0 ? (
     <TweetsListStyled>
-      {filteredUsers.map(user => (
+      {visibleUsers.map(user => (
         <TweetsListItem
           user={user}
           key={user.id}
@@ -47,3 +87,5 @@ export const TweetsList = ({ users, filterSelector }) => {
     </>
   );
 };
+
+export default TweetsList;

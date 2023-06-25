@@ -29,7 +29,7 @@ export default function App() {
           </Suspense>
         </PersistGate>
       </Provider>
-      <ToastContainer theme="dark" position="top-right" />
+      <ToastContainer theme="light" position="bottom-right" />
     </>
   );
 }

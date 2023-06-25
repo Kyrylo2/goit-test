@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const TweetsListStyled = styled.ul`
   display: grid;
+  gap: 25px;
 
   @media (min-width: 480px) {
     grid-template-columns: repeat(1, 1fr);

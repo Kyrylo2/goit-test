@@ -12,12 +12,12 @@ export const UserCard = styled.li`
   width: 380px;
   height: 460px;
   ${cardBackground}
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s linear,
+    box-shadow 0.2s linear;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 15px 30px 7px rgba(191, 130, 191, 0.2);
   }
 `;
 
@@ -47,6 +47,7 @@ export const AvatarWrapper = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   ${avatarStyles}
+  z-index: 1;
 `;
 
 export const Avatar = styled.img`

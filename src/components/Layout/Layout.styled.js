@@ -112,7 +112,7 @@ export const MainContainer = styled.main`
   margin: 0 auto;
   min-width: 320px;
 
-  @media screen and (min-width: 480px) {
+  /* @media screen and (min-width: 480px) {
     width: 480px;
   }
 
@@ -121,18 +121,19 @@ export const MainContainer = styled.main`
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
-  }
+  } */
   display: flex;
-  width: 1200px;
+
   justify-content: space-between;
   flex-direction: column;
   gap: 30px;
   flex-wrap: wrap;
 `;
 
-export const Logo = styled.p`
+export const Logo = styled(NavLink)`
   font-weight: 700;
   margin: 0;
+  color: white;
 `;
 
 export const Link = styled(NavLink)`

@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
+import { purple } from '@mui/material/colors';
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -19,7 +21,7 @@ const LoaderAnimation = keyframes`
 
 const Loader = styled.div`
   border: 5px solid #ccc;
-  border-top-color: #007aff;
+  border-top-color: ${purple[600]};
   border-radius: 50%;
   width: 50px;
   height: 50px;
