@@ -1,106 +1,103 @@
-# React homework template
+# goit-test
 
-Este proyecto fue creado con la ayuda de
-[Create React App](https://github.com/facebook/create-react-app).
-[Consulte la documentación](https://facebook.github.io/create-react-app/docs/getting-started)
-para familiarizarse con las funciones opcionales y configurarlas.
+![GitHub](https://img.shields.io/github/license/Kyrylo2/goit-test?color=blue&style=flat-square)
+![GitHub repository size](https://img.shields.io/github/repo-size/Kyrylo2/goit-test?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/Kyrylo2/goit-test?style=flat-square)
 
-## Crear un repositorio desde una plantilla
+Welcome to the goit-test repository! 🚀 This repository contains a user project
+for creating tweet cards and adding interactivity when clicking on the button.
+The project is implemented using React.
 
-Usa este repositorio de la organización GoIT como plantilla para crear el
-repositorio de tu proyecto. Para hacer esto, haz clic en `«Use this template»` y
-selecciona la opción `«Create a new repository»`, tal como se muestra en la
-imagen.
+## Technologies
 
-![Creating repo from a template step 1](./src/assets/template-step-1.png)
+🔧 The following technologies were used to develop this project:
 
-Para el siguiente paso deberás abrir la página para crear un nuevo repositorio.
-Ponle nombre, asegúrate de que el repositorio sea público y haz clic en el botón
-`«Create repository from template»`.
+- React
+- React Router
+- axios
+- Formik
+- Yup
+- styled-components
+- Material-UI (Mui)
+- Redux
+- Redux Toolkit
+- React Query
+- and much more.
 
-![Creating repo from a template step 2](./src/assets/template-step-2.png)
+## Getting Started
 
-Ahora ya tienes un repositorio de proyecto personal, junto a una estructura de
-archivos y carpetas del repositorio de plantillas. Luego trabaja con esto, así
-como con cualquier otro repositorio personal, realiza una copia en tu
-computadora y súbelo a GitHub.
+📋 Follow the instructions below to get a local copy of the project up and
+running on your machine.
 
-## Prepararse para el trabajo
+### Prerequisites
 
-1. Asegúrate de que la versión LTS de Node.js está instalada en tu computador.
-   [Descárguela e instálela](https://nodejs.org/en/) de ser necesario.
-2. Instala las dependencias base del proyecto con el comando `npm install`.
-3. Inicia el modo de desarrollo ejecutando el comando `npm start`.
-4. En tu navegador, ve a la dirección
-   [http://localhost:3000](http://localhost:3000). Esta página se recargará
-   automáticamente después de guardar los cambios en los archivos del proyecto.
+Before running this application, make sure the following is installed:
 
-## Implementación
+- Node.js (version X.X.X)
 
-La versión de producción del proyecto se verificará, compilará y desplegará
-automáticamente en GitHub Pages, en la rama `gh-pages`, cada vez que se
-actualice la rama `main`. Por ejemplo, después de un Push directo o de una
-Pool-request aceptada. Para ello, edita el campo `homepage` del archivo
-`package.json`, sustituyendo `your_username` y `your_repo_name` por los tuyos
-propios, y envía los cambios a GitHub.
+### Installation
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/Kyrylo2/goit-test.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```shell
+   cd goit-test
+   ```
+
+3. Install the dependencies:
+
+   ```shell
+   npm install
+   ```
+
+### Usage
+
+🚀 To start the development server, run the following command:
+
+```shell
+npm start
 ```
 
-A continuación, ve a la configuración del repositorio de GitHub (`Settings` >
-`Pages`) y selecciona distribuir la versión de producción de los archivos desde
-la carpeta `/root` de la rama `gh-pages`, si no se ha hecho automáticamente.
+The server will start running, and you can access the application in your
+browser at http://localhost:3000.
 
-![GitHub Pages settings](./src/assets/repo-settings.png)
+### Building the Project
 
-### Estado de la implantación
+🛠️ To build the project for production, run the following command:
 
-El estado del último commit se indica con un icono junto al ID del commit.
-
-- **Color amarillo** - el proyecto está compilado e implementado.
-- **Color verde** - La implementación se completó con éxito.
-- **Color rojo** - Se ha producido un error durante la verificación, la
-  compilación o la implementación
-
-Se puede ver información de estado más detallada haciendo clic en el icono y en
-la ventana desplegable del enlace `Detalles`.
-
-![Deployment status](./src/assets/deploy-status.png)
-
-### Página activa
-
-Después de un tiempo, normalmente un par de minutos, la página real se puede ver
-en la dirección especificada en la propiedad `homepage`. Por ejemplo, aquí está
-el enlace a la versión activa de este repositorio
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Si se abre una página en blanco, asegúrate de que no haya errores en la pestaña
-`Console` relacionados con rutas incorrectas de archivos CSS y JS del proyecto
-(**404**). Probablemente tienes un valor incorrecto para la propiedad `homepage`
-en el archivo `package.json`.
-
-### Enrutamiento
-
-Si la aplicación utiliza la librería `react-router-dom` para el enrutamiento, el
-componente `<BrowserRouter>` debe ser configurado adicionalmente pasando en la
-prop `basename`, el nombre exacto de tu repositorio. Las barras inclinadas al
-principio y al final de la cadena son obligatorias.
-
-```jsx
-<BrowserRouter basename="/your_repo_name/">
-  <App />
-</BrowserRouter>
+```shell
+npm run build
 ```
 
-## ¿Cómo funciona?
+This will create a `build` directory with optimized and bundled files.
 
-![How it works](./src/assets/how-it-works.png)
+### Code Checking
 
-1. Después de cada push a la rama `main` del repositorio GitHub, se ejecuta un
-   script especial (GitHub Action) del archivo `.github/workflows/deploy.yml`.
-2. Todos los archivos del repositorio se copian en el servidor, donde el
-   proyecto se inicializa, se verifica y se compila antes de ser implementado.
-3. Si todos los pasos tienen éxito, la versión de producción compilada de los
-   archivos del proyecto se envía a la rama `gh-pages`. De lo contrario, el
-   registro de ejecución del script indicará cuál es el problema.
+✨ To check the code using ESLint, run the following command:
+
+```shell
+npm run lint
+```
+
+### Running Tests
+
+🧪 To run the tests, execute the following command:
+
+```shell
+npm test
+```
+
+## Contributing
+
+👤 If you would like to contribute to this project, feel free to submit a pull
+request.
+
+## License
+
+📜 This project is licensed under the
+[MIT License](https://opensource.org/licenses/MIT).

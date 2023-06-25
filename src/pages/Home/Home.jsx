@@ -10,7 +10,6 @@ import {
 import { Button, Link } from '@mui/joy';
 import { purple } from '@mui/material/colors';
 import { NavLink } from 'react-router-dom';
-import { act } from 'react-dom/test-utils';
 
 const Home = () => {
   return (
