@@ -17,7 +17,7 @@ const Layout = () => {
     <BackgroundLayer>
       <Container>
         <HeaderContainer>
-          <Logo to="/">GoIt Test Task</Logo>
+          <Logo to="/">Tweetser</Logo>
           <nav>
             <Link to="/">Home</Link>
             <Link to="/tweets">Tweets</Link>
